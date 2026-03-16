@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang thành viên - Nhóm 12A3</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #f0f8ff); 
+            margin: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .box-thanh-vien {
+            background-color: white;
+            border-radius: 12px;
+            border-top: 5px solid #00529c; 
+            width: 70%;
+            max-width: 800px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        .box-thanh-vien h2 {
+            color: #00529c;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .luoi-thanh-vien {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; 
+        }
+        .nguoi {
+            width: calc(50% - 20px); 
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            box-sizing: border-box; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+        }
+        .nguoi:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .nguoi h4 {
+            color: #d32f2f; 
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .nguoi img {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #e0e0e0; 
+        }
+        .nut-back {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #00529c;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .nut-back:hover {
+            background-color: #d32f2f;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-thanh-vien">
+        <h2>Các thành viên nhóm</h2>
+        
+        <div class="luoi-thanh-vien">
+            <div class="nguoi">
+                <h4>Phùng Việt Hải</h4>
+                <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-1/605820457_1393457109224000_641069024960602187_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YYZ35xkmFcsQ7kNvwE2BRvU&_nc_oc=AdnsKa8Jdw15JxwT7rHeLgvbBUIYVb8w2O6MzRiFVHURpENxRpAqt1hqka6Q1AQrSIPbeOssmIqFMLXyl6a1nO2Z&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fhan2-5.fna&_nc_gid=q5aKrCz8wflljyTg-ptN1Q&_nc_ss=8&oh=00_AfxYqGJVqfZy5B-2Q_3GLSybOq6s2-_Dnz5obKRlnDbeWA&oe=69BDC32E" alt="Ảnh Việt Hải">
+            </div>
+            
+            <div class="nguoi">
+                <h4>Phùng Đình Minh Hiếu</h4>
+                <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-1/473274109_1150115350051758_1230889936475684397_n.jpg?stp=c1212.153.439.438a_dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=3qI360Cp6g0Q7kNvwFN331V&_nc_oc=AdnB8rSYhTZC5Q_rkgPFrdezG1p8Tw1vf5GMjrwHP7k8J3On3wLikzCKkzPF8jT0FQhwMGFPmaMgH99tFbVxF2p3&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fhan2-3.fna&_nc_gid=q5aKrCz8wflljyTg-ptN1Q&_nc_ss=8&oh=00_AfwGiC8-25JpJ0Fppkxu5HT9g8nvcJD6oO3R5ooKbGwt6w&oe=69BD9E01" alt="Ảnh Minh Hiếu">
+            </div>
+            
+            <div class="nguoi">
+                <h4>Nguyễn Gia Huy</h4>
+                <img src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-1/286377798_329113192735398_4088622117776658906_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=T46sbhRuJU8Q7kNvwHfLxsn&_nc_oc=Adl27o0UN6JsOrEXb2G0ircSP4c50dZfqfVKRQ13Ovz5HVq2p_ODrfapmNwWLPlDQbCGpd-s9jw_42eEr0wON1sM&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fhan20-1.fna&_nc_gid=q5aKrCz8wflljyTg-ptN1Q&_nc_ss=8&oh=00_AfwOmhkKS--ichFgz_c_zWgGCOK5scdsvI549oYN7VHHXg&oe=69BDAE1F" alt="Ảnh Gia Huy">
+            </div>
+            
+            <div class="nguoi">
+                <h4>Phan Tiến Minh</h4>
+                <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-1/610804023_810804761989487_7890554781768096966_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Xuqo1x3J9VcQ7kNvwFq9-sJ&_nc_oc=AdlotlzPmKryuugAKKHlqmRpLZY4BIbuBRee7vq_vW39qRyBJszOGFLLqlVBvYc2tZCXCr8VTmU0QblNZkZZGhB9&_nc_zt=24&_nc_ht=scontent.fhan2-5.fna&_nc_gid=UGDghFHko8PK3GBI-cw9sw&_nc_ss=8&oh=00_Afx8do2NEx6t40b0_mqjf5KYXAdzsIZGntwQwRmeuyMh1A&oe=69BDFA78" alt="Ảnh Tiến Minh">
+            </div>
+        </div>
+
+        <a href="index.html" class="nut-back">🔙 Quay lại trang chủ</a>
+    </div>
+
+</body>
+</html>
